@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="./styles/main.css">  
+        <title>Fake Enterprise</title>
+            
+        <h1> The Greatest Fake Enterprise</h1>
+        <section class="Ev">
+            <h3>Sobre Nosotros</h3>
+            <section2>
+            <div class="card">
+                <h2>Mision</h2>
+                <p2>Impulsar la competitividad de las empresas emergentes a través de soluciones tecnológicas disruptivas y accesibles. </p2>
+            </div>
+            <div class="card">
+                <h2>¿Quienes somos?</h2>
+                <p2>Consultora boutique especializada en la automatización de procesos mediante inteligencia artificial y desarrollo de software a medida. Nos enfocamos en transformar flujos de trabajo tradicionales en ecosistemas digitales eficientes y escalables.</p2>    
+            </div>
+            <div class="card">
+                <h2>Vision</h2>
+                <p2>Ser el referente global en integración de IA para pequeñas y medianas empresas en los próximos 5 años.</p2>
+            </div>
+            </section2>
+        </section>
+    </head>
+
+    <body> 
+        <section class="Ev">
+            <h3>Futuros Proyectos</h3>
+            <section2>
+            <div class="card">
+                <h2>Nexus Core</h2>
+                <p2 style="padding-bottom: 8px;">Un panel de control centralizado que utiliza Machine Learning para predecir inventarios en tiempo real.</p2>
+                <img src="images/proyecto1.jpg">
+            </div>
+            <div class="card">
+                <h2>EcoTrace App</h2>
+                <p2 style="padding-bottom: 8px;">Plataforma móvil desarrollada para el rastreo de la huella de carbono en cadenas de suministro logísticas.</p2>    
+                <img src="images/proyecto3jpg.jpg">
+            </div>
+            <div class="card">
+                <h2>SecureGate Protocol</h2>
+                <p2 style="padding-bottom: 8px;">Implementación de un sistema de autenticación biométrica de alta seguridad para aplicaciones bancarias.</p2>
+                <img src="images/proyecto2.png">
+            </div>
+            </section2>
+        </section>
+        <section class="Ev">
+            <h4>¿Tienes un reto para nosostros?</h4>
+            <section3 class="Ev">
+                <p4>  Completa el formulario y nos pondremos en contacto</p4>
+                <div class="card2">
+                    <input type="text" placeholder=" Nombre completo">
+                </div>
+                <div class="card2">    
+                    <input type="email" placeholder=" correo@electronico.com">
+                </div>
+                <div class="card2">
+                    <input type="text" placeholder=" Numero telefonico">
+                </div>
+                <p4>Cuentanos sobre tu proyecto, detalla lo mas importante</p4>
+                <div class="card3">
+                    <input type="text" placeholder=" Tu proyecto...">
+                </div>
+                <section4>
+                  <button id="EvColor">Enviar</button>
+                </section4>
+            </section3>
+        </section>
+
+        <script>
+            const button = document.getElementById('EvColor');
+            const allSection = document.querySelectorAll('.Ev');
+            const allCard = document.querySelectorAll('.card');
+
+            button.addEventListener('click', function() {
+                document.body.classList.toggle('altColor');
+                allSection.forEach(function(seccion) {    
+                    seccion.classList.toggle('altColor');
+                });
+                allCard.forEach(function(tarjeta) {
+                    tarjeta.classList.toggle('altColor');
+                });
+            });
+        </script>
+    </body>
+
+    <footer>
+        <h5>Nuestras Redes</h5>
+        <section5>
+            <div class="card4">
+                <p1 onclick="location.href='https://www.x.com'">   » Twitter</p1>
+            </div>
+            <div class="card4">
+                <p1 onclick="location.href='https://www.instagram.com'">   » Instagram</p1>
+            </div>
+            <div class="card4">
+                <p1 onclick="location.href='https://www.github.com'">   » Github</p1>
+            </div>
+                <p3>© 2026 Greatest Fake Enterprise. Todos los derechos reservados. Construido con pasión por Fake Company SA de CV.</p3>
+        </section5>
+    </footer>
+</html>

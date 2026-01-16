@@ -1,0 +1,229 @@
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-bottom: 0;
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+h5 {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    font-size: 22px;
+    text-shadow: 0 0 15px #010101;
+
+}
+
+p {
+    color: white;
+}
+
+p1 {
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    text-shadow: 0 0 8px #010101;
+}
+
+p2 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+p3 {
+    text-align: right;
+    color: white;
+    text-shadow: 0 0 8px #010101;
+}
+
+p4 {
+    margin-top: 5px;
+    padding-right: 70%;
+    font-weight: bold;
+    color: #010101;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+section {
+    background: radial-gradient(at center top, #01B1B3, #010101);
+    opacity: 80%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    
+}
+
+section.altColor,
+section3.altColor {
+        background: radial-gradient(at center top, #01B1B3, #ffffff);
+}
+
+section2 {
+    padding: 1.5rem;
+    display: flex;
+
+}
+
+section3 {
+    padding: 1.5rem;
+    display: grid;
+    background: #01B1B3;
+    background: radial-gradient(at center, #01B1B3 0%, #010101 100%);
+    border-radius: 15px;
+}
+
+section4 {
+    padding-left: 95%;
+}
+
+section5 {
+    padding: 1.5rem;
+    display: grid;
+}
+
+head {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #01B1B3;
+    background: radial-gradient(at center top, #01B1B3, #010101);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+body.altColor {
+    background: radial-gradient(at center top, #01B1B3, #ffffff);
+}
+
+.card {
+    background: #01B1B3;
+    background: radial-gradient(circle, #01B1B3 0%, #010101 100%);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;;
+}
+
+.card.altColor {
+    color: #010101;
+    background: radial-gradient(circle, #01B1B3 0%, #ffffff 100%);
+}
+
+.card2 {
+    margin-top: 0;
+    padding-top: 0;
+    flex-direction: column;
+    background-color: transparent;
+    padding-right: 55%;
+}
+
+.card3 {
+    flex-direction: column;
+    display:flex;
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+
+.card4 {
+    display: block;
+}
+
+button {
+    color: white;
+    background: #010101;
+    background: radial-gradient(at center top, #010101, #4C4C4C);
+    justify-content: right;
+    size: 15%;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #01B1B3;
+    background: radial-gradient(at center top, #01B1B3, #4C4C4C);
+    border: transparent;
+    font-weight: bold;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    background-color: transparent;
+    border-radius: 25px;
+    margin: -25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    text-shadow: 0 0 5px white;
+    background-color: transparent;
+    border-color:transparent;
+    box-shadow: 0 0 35px #01B1B3;
+}
+
+input {
+    border: 0px;
+    border-color: transparent;
+    box-sizing: border-box;
+    width: 35%;
+    border-radius: 3px;
+}
+
+input:focus {
+    border-color: #01B1B3;
+    background-color: transparent;
+    color: white;
+    box-shadow: 2px #01B1B3;
+}
+
+input::valid {
+    border-color: #01B1B3;
+    background-color: transparent;
+    color: white;
+    box-shadow: 2px #01B1B3;
+    outline: none;
+}
