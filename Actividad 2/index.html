@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>TAREAS POR HACER</h1>
+            <p id="fecha"></p>
+        </header>
+
+        <main>
+            <div class="seccion" id="tareasDiarias">
+                <h2>Lista de Tareas</h2>
+                <button class="button-ui" onclick="mostrarInputTarea()">Nueva Tarea</button>
+                <h3 id="encabezadoSemana"></h3>
+                <div id="contenedorTareasGuardadas" class="hide">
+                    <div id="tareasGuardadas" class="contenedor-etiquetas"></div>
+                </div>
+
+                
+                <div id="inputTarea" class="hide" style="gap: 6px; align-items: center;">
+                    <input type="text" id="nuevaTarea" placeholder="Nueva tarea">
+                    <button class="button-ui" onclick="guardarTareaDirecto()" style="color: rgb(30, 187, 207); font-weight: bold;">+</button>
+                    <button class="button-ui" onclick="guardarEtiquetaTarea()" style="color: rgb(30, 187, 207); font-weight: bold;">¤</button>
+                </div>
+
+                <div id="listaTareasPendientes" class="lista-checkbox"></div>
+
+                <button class="button-ui" onclick="guardarTareasDia()">Guardar Día</button>
+
+                <div id="tareasCalendario" class="calendario-tareas"></div>
+
+                <button class="button-ui" onclick="toggleVistaMensual()" style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">📆 Vista Mensual</button>
+
+                <div id="contenedorVistaMensual" class="oculto">
+                    <div style="margin-top: 1rem;">
+                    <label for="mesSeleccionado">Mes:</label>
+                    <select id="mesSeleccionado" onchange="mostrarCalendarioMensual()"></select>
+
+                    <label for="anioSeleccionado">Año:</label>
+                    <select id="anioSeleccionado" onchange="mostrarCalendarioMensual()"></select>
+                    </div>
+
+                    <div id="vistaMensual" class="calendario-mensual"></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
