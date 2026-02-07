@@ -1,0 +1,6 @@
+[
+    {
+        "user": "Jake",
+        "pass": "scrypt:32768:8:1$9leB3MtPYpF711ef$4e131d289580ac8934d32e3e122295737c66633c2b3a6c1418a853785aa89098709b673959989f3e8447a19bdc81de093c67a4de839e32255db0775a4feb1f2c"
+    }
+]

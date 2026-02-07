@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "titulo": "Actividad 3",
+        "completada": false
+    },
+    {
+        "id": 3,
+        "titulo": "Agua de mimon",
+        "completada": true
+    }
+]
